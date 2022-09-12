@@ -10,4 +10,8 @@ const listaAlunos=[
     new Aluno("Vinicius", 35),
 ]
 
-const gabarito = ['A', 'C',]
+const gabarito = ['A', 'C', 'B', 'A', 'C', 'A', 'B', 'C', 'A', 'B']
+
+listaAlunos.forEach(aluno => {
+    gabarito.forEach
+})
