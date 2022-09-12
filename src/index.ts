@@ -11,7 +11,11 @@ const listaAlunos=[
 ]
 
 const gabarito = ['A', 'C', 'B', 'A', 'C', 'A', 'B', 'C', 'A', 'B']
+function GabaritoNumero(n: number){
+    if( n === 1 ) return 'A';
+    if
+} 
 
 listaAlunos.forEach(aluno => {
-    gabarito.forEach
+    gabarito.forEach()
 })
