@@ -11,11 +11,17 @@ const listaAlunos=[
 ]
 
 const gabarito = ['A', 'C', 'B', 'A', 'C', 'A', 'B', 'C', 'A', 'B']
-function GabaritoNumero(n: number){
-    if( n === 1 ) return 'A';
-    if
+function GabaritoNumero(){
+    const random = Math.random()
+    if(random <= 0.33)
+    {
+        console.log('A')
+    }
+    else if(random >= 0.66)
+    {
+        console.log('C')
+    }
+    else{
+        console.log('B')
+    }
 } 
-
-listaAlunos.forEach(aluno => {
-    gabarito.forEach()
-})
