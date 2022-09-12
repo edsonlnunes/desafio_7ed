@@ -32,6 +32,12 @@ listaAlunos.forEach((aluno) => {
   });
 });
 
-
 console.log("== Alunos Aprovados ==");
 const aprovados = listaAlunos.filter((aluno => aluno.status === "Aprovado"));
+console.log (`
+${
+    aprovados.map(aluno=> `nome: ${
+        aluno.nome
+    }`)
+}
+`)
