@@ -6,10 +6,10 @@ export class Aluno {
   private _nota: number;
   private _status: string = "";
 
-  constructor(nome: string, idade: number, nota: number) {
+  constructor(nome: string, idade: number) {
     this._nome = nome;
     this._idade = idade;
-    this._nota = nota;
+    this._nota = 0;
   }
 
   get nome(): string {
