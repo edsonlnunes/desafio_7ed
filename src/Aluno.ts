@@ -21,6 +21,7 @@ export class Aluno {
   get nota(): number {
     return this._nota;
   }
+  somarNota() {
+    this._nota + 1;
+  }
 }
-
-
