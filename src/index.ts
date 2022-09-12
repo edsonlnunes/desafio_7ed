@@ -24,5 +24,8 @@ function gerarResposta() {
 }
 
 listaAlunos.forEach((aluno) => {
-  gabarito.forEach(questao);
+  gabarito.forEach((respostaGabarito) => {
+    const respostaAluno = gerarResposta();
+    if (respostaAluno === respostaGabarito);
+  });
 });
