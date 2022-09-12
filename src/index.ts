@@ -26,6 +26,12 @@ function gerarResposta() {
 listaAlunos.forEach((aluno) => {
   gabarito.forEach((respostaGabarito) => {
     const respostaAluno = gerarResposta();
-    if (respostaAluno === respostaGabarito);
+    if (respostaAluno === respostaGabarito) {
+      aluno.somarNota();
+    }
   });
 });
+
+
+console.log("== Alunos Aprovados ==");
+const aprovados = listaAlunos.filter((aluno => aluno.status === "Aprovado"));

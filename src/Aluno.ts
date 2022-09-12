@@ -21,7 +21,16 @@ export class Aluno {
   get nota(): number {
     return this._nota;
   }
+  get status(): string {
+    return this._status;
+  }
+
   somarNota() {
-    this._nota + 1;
+    this._nota += 1;
+    if (this._nota >= 6) {
+      this._status = "Aprovado";
+    } else {
+      this._status = "Reprovado";
+    }
   }
 }
