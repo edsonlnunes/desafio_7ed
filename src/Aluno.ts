@@ -1,6 +1,6 @@
 // Aluno com os atributos Nome, Idade, Nota e Status.
 
-class Aluno {
+export class Aluno {
   private _nome: string;
   private _idade: number;
   private _nota: number;
@@ -18,4 +18,9 @@ class Aluno {
   get idade(): number {
     return this._idade;
   }
+  get nota(): number {
+    return this._nota;
+  }
 }
+
+
