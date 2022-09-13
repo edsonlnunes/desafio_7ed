@@ -43,3 +43,7 @@ const reprovados = listaAlunos.filter((aluno) => aluno.status === "Reprovado");
 console.log(`
 ${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
 `);
+
+let somaNotas = 0
+listaAlunos.forEach((aluno)=>somaNotas+=aluno.nota)
+const mediaAlunos = somaNotas / listaAlunos.length
