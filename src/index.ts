@@ -33,11 +33,13 @@ listaAlunos.forEach((aluno) => {
 });
 
 console.log("== Alunos Aprovados ==");
-const aprovados = listaAlunos.filter((aluno => aluno.status === "Aprovado"));
-console.log (`
-${
-    aprovados.map(aluno=> `nome: ${
-        aluno.nome
-    }`)
-}
-`)
+const aprovados = listaAlunos.filter((aluno) => aluno.status === "Aprovado");
+console.log(`
+${aprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
+`);
+
+console.log("== Alunos Reprovados ==");
+const reprovados = listaAlunos.filter((aluno) => aluno.status === "Reprovado");
+console.log(`
+${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
+`);
