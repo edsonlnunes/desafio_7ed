@@ -47,3 +47,13 @@ ${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
 let somaNotas = 0
 listaAlunos.forEach((aluno)=>somaNotas+=aluno.nota)
 const mediaAlunos = somaNotas / listaAlunos.length
+
+
+console.log("== Média Alunos ==");
+console.log(`A média dos alunos é ${mediaAlunos}`)
+
+const classificacao = listaAlunos.sort((a1, a2)=>{
+    return a1.nota - a2.nota
+})
+console.log("== Classificação Alunos ==")
+console.log(classificacao)
