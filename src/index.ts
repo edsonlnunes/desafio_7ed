@@ -41,7 +41,7 @@ ${aprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
 console.log("== Alunos Reprovados ==");
 const reprovados = listaAlunos.filter((aluno) => aluno.status === "Reprovado");
 console.log(`
-${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
+${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota} /n`)}
 `);
 
 let somaNotas = 0
@@ -55,5 +55,7 @@ console.log(`A média dos alunos é ${mediaAlunos}`)
 const classificacao = listaAlunos.sort((a1, a2)=>{
     return a1.nota - a2.nota
 })
-console.log("== Classificação Alunos ==")
-console.log(classificacao)
+
+const melhorAluno = classificacao.length - 1
+console.log("== Melhor Aluno ==")
+console.log(`Nome: ${classificacao[melhorAluno].nome} - Nota: ${classificacao[melhorAluno].nota} `)
