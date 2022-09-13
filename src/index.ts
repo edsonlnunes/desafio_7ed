@@ -41,7 +41,7 @@ ${aprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota}`)}
 console.log("== Alunos Reprovados ==");
 const reprovados = listaAlunos.filter((aluno) => aluno.status === "Reprovado");
 console.log(`
-${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota} /n`)}
+${reprovados.map((aluno) => `Nome: ${aluno.nome} - Nota: ${aluno.nota} \n`)}
 `);
 
 let somaNotas = 0
@@ -50,7 +50,7 @@ const mediaAlunos = somaNotas / listaAlunos.length
 
 
 console.log("== Média Alunos ==");
-console.log(`A média dos alunos é ${mediaAlunos}`)
+console.log(`A média dos alunos é ${mediaAlunos.toFixed(2)}`)
 
 const classificacao = listaAlunos.sort((a1, a2)=>{
     return a1.nota - a2.nota
@@ -59,3 +59,8 @@ const classificacao = listaAlunos.sort((a1, a2)=>{
 const melhorAluno = classificacao.length - 1
 console.log("== Melhor Aluno ==")
 console.log(`Nome: ${classificacao[melhorAluno].nome} - Nota: ${classificacao[melhorAluno].nota} `)
+
+
+const piorAluno = 0
+console.log("== Pior Aluno ==")
+console.log(`Nome: ${classificacao[piorAluno].nome} - Nota: ${classificacao[piorAluno].nota} `)
